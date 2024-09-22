@@ -1,0 +1,159 @@
+:root {
+    --black: #000;
+    --bg: #ffff00e7;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5)
+
+}
+body {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    min-height: 4000px;
+    text-shadow: #000;
+}
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(0.3px);
+    font-size: 10px;
+}
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.mynavbar .nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.home {
+    min-height: 100vh;
+    background-color: orange;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.home h1, .home h2, .home h3{
+    text-shadow: var(--shadow);
+    max-width: 800px;
+    margin-left: 25px;
+}
+.home h1 {
+    font-family: 'Neuton', serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.home h2{
+    font-family: 'Space Mono', monospace;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(12);
+}
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Membuat foto berbentuk lingkaran */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    margin-left: 100px;
+  }
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+/* typing effek */
+@keyframes typing {
+    from {width: 0;}
+}
+.home h3 {
+    font-size: 1rem;
+    text-align: justify;
+}
+.sosial {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+
+}
+.sosial a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.sosial a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+.pengalaman {
+    background-color: #ffff00e7;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: auto;
+    padding: 3rem;
+    padding-bottom: 5rem;
+}
+.pengalaman h1, .pengalaman h2 {
+    text-shadow: var(--shadow);
+    color: black;
+}
+.pengalaman h1 {
+    font-family: 'Neuton', serif;
+    font-size: 8rem;
+    margin-bottom: 1px;
+}
+.pengalaman h2 {
+    font-family: 'Neuton', serif;
+    font-size: 8rem;
+    font-size: 5rem;
+}
+
+.Revo {
+    font-family: 'montserrat', 'sans-serif';
+    text-align: justify;
+}
+
+.Organisasi {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: auto;
+    padding: 3rem;
+    padding-bottom: 5rem;
+}
+.Kerjaan {
+    background-color: #aab952;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: auto;
+    padding: 3rem;
+    padding-bottom: 5rem;
+}
+.Kerjaan h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
